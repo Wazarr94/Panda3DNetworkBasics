@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ursinamultiplayerbasics"
+version = "0.1.0"
+description = "basic multiplayer game with ursinanetworking package"
+authors = ["Wazarr <jeje_04@live.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.2"
+Panda3D = "1.10.11"
+ursina = "^5.0.0"
+configparser = "^5.3.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.6.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
