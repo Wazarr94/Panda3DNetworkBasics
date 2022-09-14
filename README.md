@@ -1,18 +1,7 @@
-# UrsinaMultiplayerBasics
+# Panda3DNetworkBasics
 
-This is a starting point for people wanting to use ursina with ursinanetworking.
+This repository contains easy to understand examples that make use of the networking capabilities of the Panda3D library.
 
-## Current features
+## Getting started
 
-- Handle player connections and disconnections
-- Handle player inputs
-- Get ping in console
-- Fix the timestep of game to 60hz
-
-## TODO
-
-- Figure out the crash linked to pickle ("/x00" character)
-- Find out why my inputs sometimes transfer to the other player
-- Get to know why the ping is so high when in localhost
-- Add a chat
-- Automate the ping and display it on screen
+To run the examples, clone the repo and make sure to follow the instructions in the folder of the example you want to try!
