@@ -1,4 +1,5 @@
 import time
+from copy import deepcopy
 
 import numpy as np
 from direct.distributed.PyDatagram import PyDatagram
@@ -18,10 +19,9 @@ INPUT_MSG = 1
 POSITIONS_MSG = 2
 ID_MSG = 3
 
-player_positions = [
+player_initial_positions = [
     np.array([-2, 0], dtype=float),
     np.array([0, 0], dtype=float),
-    np.array([2, 0], dtype=float),
 ]
 
 
@@ -30,7 +30,7 @@ class ClientInfo:
         self.conn = conn
         self.id = id_player
         self.input = np.array([0, 0], dtype=float)
-        self.position = player_positions[self.id % 3]
+        self.position = deepcopy(player_initial_positions[self.id % 2])
 
 
 def send_positions(clients_list: list[ClientInfo]):
